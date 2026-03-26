@@ -24,9 +24,13 @@ class TextData(BaseModel):
 class PasswordData(BaseModel):
     password:str
 
+from fastapi import FastAPI
+
+app = FastAPI()
+
 @app.get("/")
 def home():
-    return{"status": "API running"}
+    return {"message": "Backend is working 🚀"}
 
 @app.post("/login")
 def login(data:PasswordData):
