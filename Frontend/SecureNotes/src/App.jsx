@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const API = "https://securenotes-7hbn.onrender.com";
+const API = "https://securenotes-1-xqdi.onrender.com";
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(false);
