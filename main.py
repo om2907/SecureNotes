@@ -7,14 +7,14 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins = ["#"],
+    allow_origins = ["https://secure-notes-frontend-alpha.vercel.app/"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
 SECRET_KEY = "p"
-cipher = Fernet(SECRET_KEY)
+cipher = Fernet(gkpzZSjk_ynmBohgT8z-U247l2Hn_i7o7c5KCrTCHt8=)
 
 PASSWORD = "1976"
 
